@@ -1,0 +1,27 @@
+{% extends "master.stencil" %}
+
+{% block title %}Mortgage and Future Value Calculator{% endblock %}
+
+{% block body %}
+
+<h1>Mortgage and Future Value Calculator Results</h1>
+{{fv}}
+{{Erorr}}
+{{mortgage}}
+
+{%if Error %}
+  <h1 style="color:red">{{Eror}} </h1>
+
+{% endif %}
+
+{%if fv %}
+  <h3>Future Value</h3>
+  <h1>{{fv}}</h1>
+{% endif %}
+
+{%if mortgage %}
+  <h3>Mortgage Rate</h3>
+  <h1>{{mortgage}}</h1>
+{% endif %}
+
+{% endblock %}

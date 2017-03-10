@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>
+{% block title %}{% endblock %}
+    - Mortgage and Future Value Calculator
+</title>
+</head>
+
+<body>
+{% block body %}{% endblock %}
+<p>Created By: Jeremie Hickey<br />
+This web server application with HTML user interface<br />
+was created as a Server Side Swift project implementing<br />
+a Mortgage Calculator and Future Value Calculator</p>
+
+</body>
+
+</html>

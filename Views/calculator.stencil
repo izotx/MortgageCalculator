@@ -1,0 +1,25 @@
+{% extends "master.stencil" %}
+
+{% block title %}Mortgage and Future Value Calculator{% endblock %}
+
+{% block body %}
+
+<h1>Mortgage and Future Value Calculator</h1>
+
+<form method="get" action="/result">
+    <strong>Select Calculator type and enter Balance/Deposit, Interest Rate and Period</strong><br>
+    <br>
+    <input type="radio" name="calculator" value="Mortgage" checked> Mortgage<br>
+    <input type="radio" name="calculator" value="FutureValue"> FutureValue<br>
+    <br>
+    Balance/Deposit:<br>
+    <input type="number" name ="Balance"><br>
+    Interest Rate:<br>
+    <input type="number" name="Interest"><br>
+    Period (in years):<br>
+    <input type="number" name="Period"><br>
+    <br>
+    <input type="submit" value="Calculate">
+</form>
+
+{% endblock %}
